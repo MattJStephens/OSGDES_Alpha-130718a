@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{323B4E61-930E-4C0E-A2CD-B0C8ACE44BF3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OSG_DES</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>
+    </LinkIncremental>
+    <ExecutablePath>$(GLUT_BIN);$(GLEW_BIN);$(OSG_DEBUG_BIN);$(PHYSX_BIN);$(OPENAL_BIN);$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(GLUT_INC);$(GLEW_INC);$(OSG_DEBUG_INC);$(PHYSX_FOUNDATION_INC);$(PHYSX_COOKING_INC);$(PHYSX_LOADER_INC);$(PHYSX_PHYSICS_INC);$(PHYSX_COMMON_INC);$(PHYSX_CHARACTER_INC);$(BOOST_ROOT_1_50_0);$(PYTHON_INC);$(RUBY_INC);$(OPENAL_INC);$(IncludePath)</IncludePath>
+    <LibraryPath>$(GLUT_LIB);$(GLEW_LIB);$(OSG_DEBUG_LIB);$(PHYSX_LIB);$(BOOST_LIB_1_50_0);$(PYTHON_LIB);$(RUBY_LIB);$(OPENAL_LIB);$(LibraryPath)</LibraryPath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExecutablePath>$(GLUT_BIN);$(GLEW_BIN);$(OSG_RELEASE_BIN);$(PHYSX_BIN);$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(GLUT_INC);$(GLEW_INC);$(OSG_RELEASE_INC);$(PHYSX_FOUNDATION_INC);$(PHYSX_COOKING_INC);$(PHYSX_LOADER_INC);$(PHYSX_PHYSICS_INC);$(PHYSX_COMMON_INC);$(PHYSX_CHARACTER_INC);$(IncludePath)</IncludePath>
+    <LibraryPath>$(GLUT_LIB);$(GLEW_LIB);$(OSG_RELEASE_LIB);$(PHYSX_LIB);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions)WIN32;_WIN32;_DEBUG</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>PhysXLoader.lib;PhysXCore.lib;PhysXCooking.lib;NxCharacter.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;glu32.lib;glut32.lib;glew32.lib;osgPresentationd.lib;osgAnimationd.lib;osgManipulatord.lib;osgWidgetd.lib;osgSimd.lib;osgViewerd.lib;osgVolumed.lib;osgParticled.lib;osgTextd.lib;osgFXd.lib;osgShadowd.lib;osgTerraind.lib;osgGAd.lib;osgDBd.lib;osgUtild.lib;osgd.lib;OpenThreadsd.lib;Winmm.lib;Strmiids.lib;Ws2_32.lib;python27.lib;OpenAL32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>PhysXLoader.lib;PhysXCore.lib;PhysXCooking.lib;NxCharacter.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opengl32.lib;glu32.lib;glut32.lib;glew32.lib;osgPresentation.lib;osgAnimation.lib;osgManipulator.lib;osgWidget.lib;osgSim.lib;osgViewer.lib;osgVolume.lib;osgParticle.lib;osgText.lib;osgFX.lib;osgShadow.lib;osgTerrain.lib;osgGA.lib;osgDB.lib;osgUtil.lib;osg.lib;OpenThreads.lib;Winmm.lib;Strmiids.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActorPicking.cpp" />
+    <ClCompile Include="Actors.cpp" />
+    <ClCompile Include="aldlist.cpp" />
+    <ClCompile Include="bigfloat.cpp" />
+    <ClCompile Include="bigfloatdec.cpp" />
+    <ClCompile Include="BmpLoader.cpp" />
+    <ClCompile Include="ControllerHandler.cpp" />
+    <ClCompile Include="ControllerHitReport.cpp" />
+    <ClCompile Include="CookASE.cpp" />
+    <ClCompile Include="Cooking.cpp" />
+    <ClCompile Include="CWaves.cpp" />
+    <ClCompile Include="FluidCallback.cpp" />
+    <ClCompile Include="framebufferObject.cpp" />
+    <ClCompile Include="Framework.cpp" />
+    <ClCompile Include="GLSLProgram.cpp" />
+    <ClCompile Include="Joints.cpp" />
+    <ClCompile Include="KeyBoardEventHandler.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="Link.cpp" />
+    <ClCompile Include="LoadOAL.cpp" />
+    <ClCompile Include="MediaPath_WIN.cpp" />
+    <ClCompile Include="MeshHash.cpp" />
+    <ClCompile Include="mjs_fourier_series.cpp" />
+    <ClCompile Include="MJS_Sockets.cpp" />
+    <ClCompile Include="MotionCallback.cpp" />
+    <ClCompile Include="MouseFilter.cpp" />
+    <ClCompile Include="MyFluid.cpp" />
+    <ClCompile Include="ObjMesh.cpp" />
+    <ClCompile Include="OSG_AlterText.cpp" />
+    <ClCompile Include="OSG_Camera.cpp" />
+    <ClCompile Include="OSG_CreatePhysXActor.cpp" />
+    <ClCompile Include="OSG_Default.cpp" />
+    <ClCompile Include="OSG_DES.cpp" />
+    <ClCompile Include="OSG_DirectX file convertor.cpp" />
+    <ClCompile Include="OSG_Emitter.cpp" />
+    <ClCompile Include="OSG_Entities.cpp" />
+    <ClCompile Include="OSG_Environment.cpp" />
+    <ClCompile Include="OSG_EventLogistics.cpp" />
+    <ClCompile Include="OSG_Event.cpp" />
+    <ClCompile Include="OSG_EventParser.cpp" />
+    <ClCompile Include="OSG_EventSMTP.cpp" />
+    <ClCompile Include="OSG_EventSocket.cpp" />
+    <ClCompile Include="OSG_EventTypes1.cpp" />
+    <ClCompile Include="OSG_EventUpdateVariable.cpp" />
+    <ClCompile Include="OSG_Event_AlterOrientation.cpp" />
+    <ClCompile Include="OSG_Event_AlterPosition.cpp" />
+    <ClCompile Include="OSG_Event_BoostASIO.cpp" />
+    <ClCompile Include="OSG_Event_Create3ds.cpp" />
+    <ClCompile Include="OSG_Event_CreateWave.cpp" />
+    <ClCompile Include="OSG_Event_DiscreteEventSimulation.cpp" />
+    <ClCompile Include="OSG_Event_Pipe.cpp" />
+    <ClCompile Include="OSG_Event_UpdateTheatreOfOperations.cpp" />
+    <ClCompile Include="OSG_Expression.cpp" />
+    <ClCompile Include="OSG_Geometry_tools.cpp" />
+    <ClCompile Include="OSG_Logistics_elements.cpp" />
+    <ClCompile Include="OSG_Math.cpp" />
+    <ClCompile Include="OSG_MoveGlobal.cpp" />
+    <ClCompile Include="OSG_PhysX_2_8.cpp" />
+    <ClCompile Include="OSG_PlayWav.cpp" />
+    <ClCompile Include="OSG_Python.cpp" />
+    <ClCompile Include="OSG_Reference.cpp" />
+    <ClCompile Include="OSG_Ruby.cpp" />
+    <ClCompile Include="OSG_ScreenGrab.cpp" />
+    <ClCompile Include="OSG_Sensor.cpp" />
+    <ClCompile Include="OSG_Source.cpp" />
+    <ClCompile Include="OSG_Tools.cpp" />
+    <ClCompile Include="OSG_UpdateNxActor.cpp" />
+    <ClCompile Include="OSG_UpdatePostionParameteric.cpp" />
+    <ClCompile Include="OSG_UpdateVelocity.cpp" />
+    <ClCompile Include="OSG_UpdateViewer.cpp" />
+    <ClCompile Include="OSG_UpdateViewerAnimate.cpp" />
+    <ClCompile Include="OSG_XML_Environment_LinkReferences.cpp" />
+    <ClCompile Include="OSG_XML_Environment_parser.cpp" />
+    <ClCompile Include="OSG_XML_Environment_parser_Get_index.cpp" />
+    <ClCompile Include="OSG_XML_Parser_Tools.cpp" />
+    <ClCompile Include="OSG_XML_Save_environment_tree.cpp" />
+    <ClCompile Include="OSG_XML_Save_event_tree.cpp" />
+    <ClCompile Include="OSG_XML_Writer.cpp" />
+    <ClCompile Include="ParticleFactory.cpp" />
+    <ClCompile Include="PhysXCharacterController.cpp" />
+    <ClCompile Include="PhysXCloth.cpp" />
+    <ClCompile Include="PhysXClothCallback.cpp" />
+    <ClCompile Include="PhysXCube.cpp" />
+    <ClCompile Include="PhysXFluid.cpp" />
+    <ClCompile Include="PhysXJoint.cpp" />
+    <ClCompile Include="PhysXPicker.cpp" />
+    <ClCompile Include="PhysXPlane.cpp" />
+    <ClCompile Include="PhysXRope.cpp" />
+    <ClCompile Include="PhysXSoftBody.cpp" />
+    <ClCompile Include="PhysXSphere.cpp" />
+    <ClCompile Include="PhysXTerrain.cpp" />
+    <ClCompile Include="PXTools.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="SampleCollision.cpp" />
+    <ClCompile Include="SampleCollisionStaticFriction.cpp" />
+    <ClCompile Include="SampleCreate.cpp" />
+    <ClCompile Include="SampleEmitter.cpp" />
+    <ClCompile Include="SampleEvents.cpp" />
+    <ClCompile Include="SampleForce.cpp" />
+    <ClCompile Include="SamplePacketData.cpp" />
+    <ClCompile Include="SampleParticleFluid.cpp" />
+    <ClCompile Include="SampleUserData.cpp" />
+    <ClCompile Include="Stream.cpp" />
+    <ClCompile Include="temp.cpp" />
+    <ClCompile Include="TerrainRender.cpp" />
+    <ClCompile Include="Timing_WIN.cpp" />
+    <ClCompile Include="UserAllocator.cpp" />
+    <ClCompile Include="Util.cpp" />
+    <ClCompile Include="VertexWelder.cpp" />
+    <ClCompile Include="wavefront.cpp" />
+    <ClCompile Include="XMLDOM_Helper.cpp" />
+    <ClCompile Include="XML_EXPR.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActorPicking.h" />
+    <ClInclude Include="Actors.h" />
+    <ClInclude Include="aldlist.h" />
+    <ClInclude Include="bigfloat.h" />
+    <ClInclude Include="BmpLoader.h" />
+    <ClInclude Include="ControllerHandler.h" />
+    <ClInclude Include="ControllerHitReport.h" />
+    <ClInclude Include="CookASE.h" />
+    <ClInclude Include="Cooking.h" />
+    <ClInclude Include="CustomRandom.h" />
+    <ClInclude Include="CWaves.h" />
+    <ClInclude Include="ErrorStream.h" />
+    <ClInclude Include="FluidCallback.h" />
+    <ClInclude Include="framebufferObject.h" />
+    <ClInclude Include="Framework.h" />
+    <ClInclude Include="GLFontData.h" />
+    <ClInclude Include="GLSLProgram.h" />
+    <ClInclude Include="KeyBoardEventHandler.h" />
+    <ClInclude Include="Link.h" />
+    <ClInclude Include="LoadOAL.h" />
+    <ClInclude Include="MediaPath.h" />
+    <ClInclude Include="MeshHash.h" />
+    <ClInclude Include="mjs_fourier_series.h" />
+    <ClInclude Include="MJS_Sockets.h" />
+    <ClInclude Include="MotionCallback.h" />
+    <ClInclude Include="MouseFilter.h" />
+    <ClInclude Include="MyFluid.h" />
+    <ClInclude Include="ObjMesh.h" />
+    <ClInclude Include="OSG_BOOST_random.h" />
+    <ClInclude Include="OSG_Camera.h" />
+    <ClInclude Include="OSG_Default.h" />
+    <ClInclude Include="OSG_DES.h" />
+    <ClInclude Include="OSG_Entities.h" />
+    <ClInclude Include="OSG_Environment.h" />
+    <ClInclude Include="OSG_Event.h" />
+    <ClInclude Include="OSG_Expression.h" />
+    <ClInclude Include="OSG_Geometry_tools.h" />
+    <ClInclude Include="OSG_Logistics_elements.h" />
+    <ClInclude Include="OSG_PhysX_2_8.h" />
+    <ClInclude Include="OSG_Reference.h" />
+    <ClInclude Include="OSG_time.h" />
+    <ClInclude Include="OSG_Tools.h" />
+    <ClInclude Include="OSG_XML_Parser_Tools.h" />
+    <ClInclude Include="OSG_XML_Save_environment_tree.h" />
+    <ClInclude Include="OSG_XML_Save_event_tree.h" />
+    <ClInclude Include="OSG_XML_Writer.h" />
+    <ClInclude Include="ParticleFactory.h" />
+    <ClInclude Include="PhysXCharacterController.h" />
+    <ClInclude Include="PhysXCloth.h" />
+    <ClInclude Include="PhysXClothCallback.h" />
+    <ClInclude Include="PhysXCube.h" />
+    <ClInclude Include="PhysXFluid.h" />
+    <ClInclude Include="PhysXJoint.h" />
+    <ClInclude Include="PhysXPicker.h" />
+    <ClInclude Include="PhysXPlane.h" />
+    <ClInclude Include="PhysXRope.h" />
+    <ClInclude Include="PhysXSoftBody.h" />
+    <ClInclude Include="PhysXSphere.h" />
+    <ClInclude Include="PhysXTerrain.h" />
+    <ClInclude Include="PXTools.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="SampleMutex.h" />
+    <ClInclude Include="SampleMutex_WIN.h" />
+    <ClInclude Include="SampleParticleFluid.h" />
+    <ClInclude Include="SamplesVRDSettings.h" />
+    <ClInclude Include="Stream.h" />
+    <ClInclude Include="TerrainRender.h" />
+    <ClInclude Include="Timing.h" />
+    <ClInclude Include="UserAllocator.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="VertexWelder.h" />
+    <ClInclude Include="wavefront.h" />
+    <ClInclude Include="XMLDOM_Helper.h" />
+    <ClInclude Include="XML_EXPR.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="python001.py" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

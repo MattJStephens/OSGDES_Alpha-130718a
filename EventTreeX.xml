@@ -1,0 +1,23 @@
+<?xml version="1.0"?><!--mjs OpenSceneGraph Extensible Markup Language Process Description Script (OSG XML PDS)--><Event>
+	<Name>Sequencer1</Name>
+	<Type>EventType_Sequencer</Type>
+	<Event>
+	<Name>LoadScript</Name>
+	<Type>EventType_LoadScript</Type></Event>
+	<Event>
+	<Name>SaveEnvironmentTree</Name>
+	<Type>EventType_SaveEnvironmentTree</Type>
+	<FileName>EnvironmentTreeX2.xml</FileName>
+
+    <Recurrance>Singular</Recurrance>
+  
+  </Event>
+	<Event>
+	<Name>SaveEventTree</Name>
+	<Type>EventType_SaveEventTree</Type>
+	<FileName>EventTreeX.xml</FileName>
+
+
+    <Recurrance>Singular</Recurrance>
+  
+  </Event></Event>

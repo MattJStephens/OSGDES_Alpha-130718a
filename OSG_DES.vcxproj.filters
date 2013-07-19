@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Event">
+      <UniqueIdentifier>{b1752feb-6b3e-4e06-bcf4-36a0f2581656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Environment">
+      <UniqueIdentifier>{0428cfcd-d89b-486d-bde3-9aad24932bce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{9f3654a4-8d4b-49c5-acb5-001e987073cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{e3377e32-d472-40a3-b1e6-ac8e2b964c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OSGPhysx">
+      <UniqueIdentifier>{0fe6e610-343d-42b4-ab72-b063b63e4977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bignum">
+      <UniqueIdentifier>{1296e50a-75e8-4311-8ba4-7cb8e57b7012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OSGPhysx\OSGPhysXHelper">
+      <UniqueIdentifier>{422a7699-fdfc-4e4e-910b-b595a02f380a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PhysX">
+      <UniqueIdentifier>{07d4d2ca-83f7-482c-9054-73c790f98eb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PhsyX util">
+      <UniqueIdentifier>{860beaf2-9d42-4bf5-b3c2-9f09df6b7027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python">
+      <UniqueIdentifier>{3b020f84-3972-4480-8301-3874d890eef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OPENAL">
+      <UniqueIdentifier>{0bb2a7c8-9e11-47ce-b418-17b1c7295adb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OSG_Event.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_EventTypes1.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_EventParser.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Geometry_tools.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_XML_Parser_Tools.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_XML_Environment_LinkReferences.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_XML_Environment_parser.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_XML_Environment_parser_Get_index.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_PhysX_2_8.cpp">
+      <Filter>PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Expression.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="temp.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLDOM_Helper.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Default.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ActorPicking.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="Actors.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="BmpLoader.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerHandler.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerHitReport.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="CookASE.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="Cooking.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="FluidCallback.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="framebufferObject.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="GLSLProgram.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="Joints.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="Link.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshHash.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="MotionCallback.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseFilter.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleFactory.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleCollision.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleCollisionStaticFriction.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleCreate.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleEmitter.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleEvents.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleForce.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="SamplePacketData.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleParticleFluid.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleUserData.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="Stream.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainRender.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="UserAllocator.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexWelder.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="wavefront.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="PXTools.cpp">
+      <Filter>PhysX</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaPath_WIN.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="Timing_WIN.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Entities.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyBoardEventHandler.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXCube.cpp">
+      <Filter>OSGPhysx</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXPlane.cpp">
+      <Filter>OSGPhysx</Filter>
+    </ClCompile>
+    <ClCompile Include="bigfloat.cpp">
+      <Filter>bignum</Filter>
+    </ClCompile>
+    <ClCompile Include="bigfloatdec.cpp">
+      <Filter>bignum</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXSphere.cpp">
+      <Filter>OSGPhysx</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXCloth.cpp">
+      <Filter>OSGPhysx</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Camera.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_DirectX file convertor.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Environment.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Reference.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_EventLogistics.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_ScreenGrab.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Sensor.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_AlterText.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_UpdatePostionParameteric.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_UpdateViewer.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_UpdateVelocity.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Source.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="XML_EXPR.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMesh.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXTerrain.cpp">
+      <Filter>OSGPhysx</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXFluid.cpp">
+      <Filter>OSGPhysx</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXSoftBody.cpp">
+      <Filter>OSGPhysx</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXRope.cpp">
+      <Filter>OSGPhysx</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXJoint.cpp">
+      <Filter>OSGPhysx</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXClothCallback.cpp">
+      <Filter>OSGPhysx\OSGPhysXHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXCharacterController.cpp">
+      <Filter>OSGPhysx</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXPicker.cpp">
+      <Filter>OSGPhysx</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFluid.cpp">
+      <Filter>PhsyX util</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Event_UpdateTheatreOfOperations.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Event_DiscreteEventSimulation.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Logistics_elements.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_DES.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_UpdateViewerAnimate.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_UpdateNxActor.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_CreatePhysXActor.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Tools.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_MoveGlobal.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Emitter.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Event_BoostASIO.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Event_Pipe.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_XML_Save_event_tree.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_XML_Save_environment_tree.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_XML_Writer.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_EventUpdateVariable.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_EventSMTP.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_EventSocket.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Ruby.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Python.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="MJS_Sockets.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="aldlist.cpp">
+      <Filter>OPENAL</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework.cpp">
+      <Filter>OPENAL</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadOAL.cpp">
+      <Filter>OPENAL</Filter>
+    </ClCompile>
+    <ClCompile Include="CWaves.cpp">
+      <Filter>OPENAL</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Event_AlterPosition.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Event_AlterOrientation.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Event_Create3ds.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Event_CreateWave.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_PlayWav.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="mjs_fourier_series.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="OSG_Math.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OSG_Entities.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_XML_Parser_Tools.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_Geometry_tools.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_Event.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_XML_Save_event_tree.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_PhysX_2_8.h">
+      <Filter>PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_Default.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLDOM_Helper.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_Expression.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_Tools.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ActorPicking.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="Actors.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="BmpLoader.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerHandler.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerHitReport.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="CookASE.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="Cooking.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomRandom.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorStream.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="FluidCallback.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="framebufferObject.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="GLFontData.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="GLSLProgram.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="Link.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="MediaPath.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshHash.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="MotionCallback.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseFilter.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="wavefront.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleFactory.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleMutex.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleParticleFluid.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="SamplesVRDSettings.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="Stream.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainRender.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="Timing.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="UserAllocator.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexWelder.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleMutex_WIN.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="PXTools.h">
+      <Filter>PhysX</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_Environment.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyBoardEventHandler.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXCube.h">
+      <Filter>OSGPhysx</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXPlane.h">
+      <Filter>OSGPhysx</Filter>
+    </ClInclude>
+    <ClInclude Include="bigfloat.h">
+      <Filter>bignum</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXSphere.h">
+      <Filter>OSGPhysx</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXCloth.h">
+      <Filter>OSGPhysx</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_Camera.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_Reference.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_time.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="XML_EXPR.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMesh.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXTerrain.h">
+      <Filter>OSGPhysx</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXFluid.h">
+      <Filter>OSGPhysx</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXSoftBody.h">
+      <Filter>OSGPhysx</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXRope.h">
+      <Filter>OSGPhysx</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXJoint.h">
+      <Filter>OSGPhysx</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXClothCallback.h">
+      <Filter>OSGPhysx\OSGPhysXHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXCharacterController.h">
+      <Filter>OSGPhysx</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXPicker.h">
+      <Filter>OSGPhysx</Filter>
+    </ClInclude>
+    <ClInclude Include="MyFluid.h">
+      <Filter>PhsyX util</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_Logistics_elements.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_BOOST_random.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_DES.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_XML_Save_environment_tree.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="OSG_XML_Writer.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="MJS_Sockets.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadOAL.h">
+      <Filter>OPENAL</Filter>
+    </ClInclude>
+    <ClInclude Include="aldlist.h">
+      <Filter>OPENAL</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework.h">
+      <Filter>OPENAL</Filter>
+    </ClInclude>
+    <ClInclude Include="CWaves.h">
+      <Filter>OPENAL</Filter>
+    </ClInclude>
+    <ClInclude Include="mjs_fourier_series.h">
+      <Filter>main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="python001.py">
+      <Filter>Python</Filter>
+    </None>
+  </ItemGroup>
+</Project>
